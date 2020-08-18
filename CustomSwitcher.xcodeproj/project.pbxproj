@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24C7C074944834879630B642 /* Pods_CustomSwitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FD9F79B1B3FC71302329A3 /* Pods_CustomSwitcher.framework */; };
 		847E296424EB8FB200189C39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E296324EB8FB200189C39 /* AppDelegate.swift */; };
 		847E296624EB8FB200189C39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E296524EB8FB200189C39 /* SceneDelegate.swift */; };
 		847E296824EB8FB200189C39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E296724EB8FB200189C39 /* ViewController.swift */; };
 		847E296B24EB8FB200189C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E296924EB8FB200189C39 /* Main.storyboard */; };
 		847E296D24EB8FBA00189C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847E296C24EB8FBA00189C39 /* Assets.xcassets */; };
 		847E297024EB8FBA00189C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E296E24EB8FBA00189C39 /* LaunchScreen.storyboard */; };
+		847E297824EB8FF200189C39 /* CustomSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E297724EB8FF200189C39 /* CustomSwitcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		847E296C24EB8FBA00189C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847E296F24EB8FBA00189C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847E297124EB8FBA00189C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847E297724EB8FF200189C39 /* CustomSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwitcher.swift; sourceTree = "<group>"; };
+		89FD9F79B1B3FC71302329A3 /* Pods_CustomSwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomSwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0464BD3086B1A40F8A3280 /* Pods-CustomSwitcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomSwitcher.debug.xcconfig"; path = "Target Support Files/Pods-CustomSwitcher/Pods-CustomSwitcher.debug.xcconfig"; sourceTree = "<group>"; };
+		C2F7DA56B9DC677BFCA14745 /* Pods-CustomSwitcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomSwitcher.release.xcconfig"; path = "Target Support Files/Pods-CustomSwitcher/Pods-CustomSwitcher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C7C074944834879630B642 /* Pods_CustomSwitcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		608E9B3057E63D2A457D6CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89FD9F79B1B3FC71302329A3 /* Pods_CustomSwitcher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		847E295724EB8FB200189C39 = {
 			isa = PBXGroup;
 			children = (
 				847E296224EB8FB200189C39 /* CustomSwitcher */,
 				847E296124EB8FB200189C39 /* Products */,
+				C012AAA30FA8897711D63290 /* Pods */,
+				608E9B3057E63D2A457D6CF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +73,7 @@
 		847E296224EB8FB200189C39 /* CustomSwitcher */ = {
 			isa = PBXGroup;
 			children = (
+				847E297724EB8FF200189C39 /* CustomSwitcher.swift */,
 				847E296324EB8FB200189C39 /* AppDelegate.swift */,
 				847E296524EB8FB200189C39 /* SceneDelegate.swift */,
 				847E296724EB8FB200189C39 /* ViewController.swift */,
@@ -67,6 +85,16 @@
 			path = CustomSwitcher;
 			sourceTree = "<group>";
 		};
+		C012AAA30FA8897711D63290 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF0464BD3086B1A40F8A3280 /* Pods-CustomSwitcher.debug.xcconfig */,
+				C2F7DA56B9DC677BFCA14745 /* Pods-CustomSwitcher.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847E297424EB8FBA00189C39 /* Build configuration list for PBXNativeTarget "CustomSwitcher" */;
 			buildPhases = (
+				7DF6686EBA424C7BE0B79AE4 /* [CP] Check Pods Manifest.lock */,
 				847E295C24EB8FB200189C39 /* Sources */,
 				847E295D24EB8FB200189C39 /* Frameworks */,
 				847E295E24EB8FB200189C39 /* Resources */,
+				809B5ED5410B022101EFD22A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7DF6686EBA424C7BE0B79AE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomSwitcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		809B5ED5410B022101EFD22A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomSwitcher/Pods-CustomSwitcher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomSwitcher/Pods-CustomSwitcher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomSwitcher/Pods-CustomSwitcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		847E295C24EB8FB200189C39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +213,7 @@
 				847E296824EB8FB200189C39 /* ViewController.swift in Sources */,
 				847E296424EB8FB200189C39 /* AppDelegate.swift in Sources */,
 				847E296624EB8FB200189C39 /* SceneDelegate.swift in Sources */,
+				847E297824EB8FF200189C39 /* CustomSwitcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +355,7 @@
 		};
 		847E297524EB8FBA00189C39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0464BD3086B1A40F8A3280 /* Pods-CustomSwitcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		847E297624EB8FBA00189C39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F7DA56B9DC677BFCA14745 /* Pods-CustomSwitcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
